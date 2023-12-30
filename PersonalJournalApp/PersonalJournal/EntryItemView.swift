@@ -9,7 +9,8 @@ import SwiftUI
 
 struct EntryItemView: View {
    
-    @State private var entryItem: String = ""
+    @Binding var entryItems:[EntryItem]
+    @State  var name: String = ""
     
     var body: some View {
        
@@ -18,6 +19,7 @@ struct EntryItemView: View {
             HStack {
                 Spacer()
                 Button {
+                    //sheetButton.toggle()
                 } label: {
                     Image(systemName: "xmark.circle.fill")
                 }
@@ -26,11 +28,16 @@ struct EntryItemView: View {
             .padding()
             
             TextField("Enter your journal entry...",
-                    text: $entryItem
+                    text: $name
                 )
             .padding()
                 
             Button {
+               
+                entryItems.append(EntryItem(name: name,
+                                            photo: "bunny1",
+                                            privateMode: true))
+                
             } label: {
                 Text("Save Entry")
                     .font(.title2)
@@ -43,5 +50,7 @@ struct EntryItemView: View {
 }
 
 #Preview {
-    EntryItemView()
+    EntryItemView(entryItems: .constant([EntryItem(name: "Entry 1",
+                                         photo: "bunny1",
+                                         privateMode: true)]))
 }

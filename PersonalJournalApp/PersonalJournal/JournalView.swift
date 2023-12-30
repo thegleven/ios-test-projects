@@ -9,11 +9,11 @@ import SwiftUI
 
 struct JournalView: View {
     
-    @State var sheetVisible = false
-    @State var sheetButton = false
-    @State var selectedPhoto = ""
+    @State private var sheetVisible = false
+    @State private var sheetButton = false
+    @State private var selectedPhoto = ""
    
-    @State var entryItems:[EntryItem] = [EntryItem]()
+    @State private var entryItems:[EntryItem] = [EntryItem]()
     var dataEntries = DataEntries()
     
     var body: some View {
@@ -53,7 +53,7 @@ struct JournalView: View {
             }
             .font(.title)
             .sheet(isPresented: $sheetButton) {
-                EntryItemView()
+                EntryItemView(entryItems: $entryItems)
             }
             
         }
