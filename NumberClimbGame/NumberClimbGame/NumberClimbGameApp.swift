@@ -2,7 +2,7 @@
 //  NumberClimbGameApp.swift
 //  NumberClimbGame
 //
-//  Created by theshamuel on 04/12/2023.
+//  Created by thegleven
 //
 
 import SwiftUI
