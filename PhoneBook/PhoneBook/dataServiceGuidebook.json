@@ -1,0 +1,246 @@
+ [
+    {
+      "company_name": "ABC Corporation",
+      "company_image": "company1",
+      "departments": [
+        {
+          "department_name": "HR",
+          "employees": [
+            {
+              "name": "John Smith",
+              "position": "HR Manager",
+              "email": "john.smith@abccorp.com",
+              "phone": "+1 (888) 555-1212"
+            },
+            {
+              "name": "Emily Davis",
+              "position": "HR Specialist",
+              "email": "emily.davis@abccorp.com",
+              "phone": "+1 (234) 567-8901"
+            },
+            {
+              "name": "Michael Johnson",
+              "position": "HR Coordinator",
+              "email": "michael.johnson@abccorp.com",
+              "phone": "+1 (345) 678-9012"
+            },
+            {
+              "name": "Sarah Brown",
+              "position": "HR Assistant",
+              "email": "sarah.brown@abccorp.com",
+              "phone": "+1 (456) 789-0123"
+            }
+          ]
+        },
+        {
+          "department_name": "Finance",
+          "employees": [
+            {
+              "name": "David Wilson",
+              "position": "Finance Manager",
+              "email": "david.wilson@abccorp.com",
+              "phone": "+1 (567) 890-1234"
+            },
+            {
+              "name": "Jennifer Lee",
+              "position": "Financial Analyst",
+              "email": "jennifer.lee@abccorp.com",
+              "phone": "+1 (678) 901-2345"
+            },
+            {
+              "name": "Robert Turner",
+              "position": "Accountant",
+              "email": "robert.turner@abccorp.com",
+              "phone": "+1 (789) 012-3456"
+            },
+            {
+              "name": "Laura Martinez",
+              "position": "Finance Assistant",
+              "email": "laura.martinez@abccorp.com",
+              "phone": "+1 (890) 123-4567"
+            }
+          ]
+        },
+        {
+          "department_name": "Marketing",
+          "employees": [
+            {
+              "name": "Jessica White",
+              "position": "Marketing Director",
+              "email": "jessica.white@abccorp.com",
+              "phone": "+1 (987) 654-3210"
+            },
+            {
+              "name": "Kevin Adams",
+              "position": "Marketing Manager",
+              "email": "kevin.adams@abccorp.com",
+              "phone": "+1 (876) 543-2109"
+            },
+            {
+              "name": "Megan Hall",
+              "position": "Marketing Specialist",
+              "email": "megan.hall@abccorp.com",
+              "phone": "+1 (765) 432-1098"
+            },
+            {
+              "name": "Daniel Garcia",
+              "position": "Marketing Coordinator",
+              "email": "daniel.garcia@abccorp.com",
+              "phone": "+1 (654) 321-0987"
+            }
+          ]
+        },
+        {
+          "department_name": "IT",
+          "employees": [
+            {
+              "name": "Andrew Clark",
+              "position": "IT Director",
+              "email": "andrew.clark@abccorp.com",
+              "phone": "+1 (543) 210-9876"
+            },
+            {
+              "name": "Michelle Baker",
+              "position": "IT Manager",
+              "email": "michelle.baker@abccorp.com",
+              "phone": "+1 (432) 109-8765"
+            },
+            {
+              "name": "William Taylor",
+              "position": "Systems Administrator",
+              "email": "william.taylor@abccorp.com",
+              "phone": "+1 (321) 098-7654"
+            },
+            {
+              "name": "Samantha Wright",
+              "position": "IT Specialist",
+              "email": "samantha.wright@abccorp.com",
+              "phone": "+1 (210) 987-6543"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company_name": "XYZ Inc.",
+      "company_image": "company2",
+      "departments": [
+        {
+          "department_name": "Sales",
+          "employees": [
+            {
+              "name": "Christopher Johnson",
+              "position": "Sales Director",
+              "email": "christopher.johnson@xyzinc.com",
+              "phone": "+1 (555) 123-4567"
+            },
+            {
+              "name": "Amanda Smith",
+              "position": "Sales Manager",
+              "email": "amanda.smith@xyzinc.com",
+              "phone": "+1 (555) 234-5678"
+            },
+            {
+              "name": "Matthew Davis",
+              "position": "Sales Representative",
+              "email": "matthew.davis@xyzinc.com",
+              "phone": "+1 (555) 345-6789"
+            },
+            {
+              "name": "Olivia Wilson",
+              "position": "Sales Associate",
+              "email": "olivia.wilson@xyzinc.com",
+              "phone": "+1 (555) 456-7890"
+            }
+          ]
+        },
+        {
+          "department_name": "Engineering",
+          "employees": [
+            {
+              "name": "Ryan Martinez",
+              "position": "Chief Engineer",
+              "email": "ryan.martinez@xyzinc.com",
+              "phone": "+1 (555) 567-8901"
+            },
+            {
+              "name": "Sophia Lee",
+              "position": "Software Engineer",
+              "email": "sophia.lee@xyzinc.com",
+              "phone": "+1 (555) 678-9012"
+            },
+            {
+              "name": "Ethan Brown",
+              "position": "Hardware Engineer",
+              "email": "ethan.brown@xyzinc.com",
+              "phone": "+1 (555) 789-0123"
+            },
+            {
+              "name": "Isabella Taylor",
+              "position": "QA Engineer",
+              "email": "isabella.taylor@xyzinc.com",
+              "phone": "+1 (555) 890-1234"
+            }
+          ]
+        },
+        {
+          "department_name": "Customer Support",
+          "employees": [
+            {
+              "name": "James Adams",
+              "position": "Customer Support Manager",
+              "email": "james.adams@xyzinc.com",
+              "phone": "+1 (555) 901-2345"
+            },
+            {
+              "name": "Lily Turner",
+              "position": "Support Specialist",
+              "email": "lily.turner@xyzinc.com",
+              "phone": "+1 (555) 012-3456"
+            },
+            {
+              "name": "Daniel Hall",
+              "position": "Support Representative",
+              "email": "daniel.hall@xyzinc.com",
+              "phone": "+1 (555) 123-4567"
+            },
+            {
+              "name": "Chloe Garcia",
+              "position": "Support Associate",
+              "email": "chloe.garcia@xyzinc.com",
+              "phone": "+1 (555) 234-5678"
+            }
+          ]
+        },
+        {
+          "department_name": "Research and Development",
+          "employees": [
+            {
+              "name": "William Clark",
+              "position": "Research Director",
+              "email": "william.clark@xyzinc.com",
+              "phone": "+1 (555) 345-6789"
+            },
+            {
+              "name": "Emma Baker",
+              "position": "Research Scientist",
+              "email": "emma.baker@xyzinc.com",
+              "phone": "+1 (555) 456-7890"
+            },
+            {
+              "name": "Aiden Wright",
+              "position": "Development Engineer",
+              "email": "aiden.wright@xyzinc.com",
+              "phone": "+1 (555) 567-8901"
+            },
+            {
+              "name": "Grace Martinez",
+              "position": "Product Designer",
+              "email": "grace.martinez@xyzinc.com",
+              "phone": "+1 (555) 678-9012"
+            }
+          ]
+        }
+      ]
+    }
+  ]
