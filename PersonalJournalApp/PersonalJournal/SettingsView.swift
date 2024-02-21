@@ -2,13 +2,15 @@
 //  SettingsView.swift
 //  PersonalJournal
 //
-//  Created by theshamuel on 16/12/2023.
+//  Created by thegleven
 //
 
 import SwiftUI
 
 struct SettingsView: View {
-    @State private var privateMode = false
+    
+    @Binding var privateMode: Bool
+    
     var body: some View {
         
         HStack {
@@ -22,5 +24,5 @@ struct SettingsView: View {
 }
 
 #Preview {
-    SettingsView()
+    SettingsView(privateMode: .constant(false))
 }

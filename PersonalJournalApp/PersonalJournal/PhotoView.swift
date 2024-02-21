@@ -2,7 +2,7 @@
 //  PhotoView.swift
 //  PersonalJournal
 //
-//  Created by theshamuel on 18/12/2023.
+//  Created by thegleven
 //
 
 import SwiftUI

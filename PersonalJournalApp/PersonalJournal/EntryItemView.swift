@@ -2,7 +2,7 @@
 //  EntryItemView.swift
 //  PersonalJournal
 //
-//  Created by theshamuel on 16/12/2023.
+//  Created by thegleven
 //
 
 import SwiftUI
@@ -10,6 +10,10 @@ import SwiftUI
 struct EntryItemView: View {
    
     @Binding var entryItems:[EntryItem]
+    @Binding var sheetButton: Bool
+    
+    @Binding var privateMode: Bool
+    
     @State  var name: String = ""
     
     var body: some View {
@@ -19,7 +23,9 @@ struct EntryItemView: View {
             HStack {
                 Spacer()
                 Button {
-                    //sheetButton.toggle()
+                    
+                    sheetButton = false
+                    
                 } label: {
                     Image(systemName: "xmark.circle.fill")
                 }
@@ -36,7 +42,8 @@ struct EntryItemView: View {
                
                 entryItems.append(EntryItem(name: name,
                                             photo: "bunny1",
-                                            privateMode: true))
+                                            privateMode: privateMode))
+                sheetButton = false
                 
             } label: {
                 Text("Save Entry")
@@ -51,6 +58,8 @@ struct EntryItemView: View {
 
 #Preview {
     EntryItemView(entryItems: .constant([EntryItem(name: "Entry 1",
-                                         photo: "bunny1",
-                                         privateMode: true)]))
+                                                   photo: "bunny1",
+                                                   privateMode: true)]),
+                  sheetButton: .constant(true),
+                  privateMode: .constant(false))
 }

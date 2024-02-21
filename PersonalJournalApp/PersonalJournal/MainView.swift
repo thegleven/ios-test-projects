@@ -2,18 +2,20 @@
 //  ContentView.swift
 //  PersonalJournal
 //
-//  Created by theshamuel on 16/12/2023.
+//  Created by thegleven
 //
 
 import SwiftUI
 
 struct MainView: View {
     
+    @State private var privateMode: Bool = false
+    
     var body: some View {
         
             TabView {
                 
-                JournalView()
+                JournalView(privateMode: $privateMode)
                     .tabItem {
                         VStack {
                             Image(systemName: "book.fill")
@@ -21,7 +23,7 @@ struct MainView: View {
                         }
                     }
                 
-                SettingsView()
+                SettingsView(privateMode: $privateMode)
                     .tabItem {
                         VStack {
                             Image(systemName: "gear")

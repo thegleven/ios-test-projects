@@ -2,7 +2,7 @@
 //  PersonalJournalApp.swift
 //  PersonalJournal
 //
-//  Created by theshamuel on 16/12/2023.
+//  Created by thegleven
 //
 
 import SwiftUI

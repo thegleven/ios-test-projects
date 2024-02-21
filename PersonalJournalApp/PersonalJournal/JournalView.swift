@@ -2,7 +2,7 @@
 //  JournalView.swift
 //  PersonalJournal
 //
-//  Created by theshamuel on 16/12/2023.
+//  Created by thegleven
 //
 
 import SwiftUI
@@ -14,6 +14,9 @@ struct JournalView: View {
     @State private var selectedPhoto = ""
    
     @State private var entryItems:[EntryItem] = [EntryItem]()
+    
+    @Binding var privateMode: Bool
+    
     var dataEntries = DataEntries()
     
     var body: some View {
@@ -26,18 +29,38 @@ struct JournalView: View {
                                      GridItem(spacing: 0)],
                            spacing: 0) {
                     
+                    
+                    
                     ForEach (entryItems, id: \.id) { item in
                         
-                        VStack {
+                        if privateMode == true && item.privateMode == privateMode {
                             
-                            Image(item.photo)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .onTapGesture {
-                                    selectedPhoto = item.photo
-                                    sheetVisible = true
-                                }
-                            Text(item.name)
+                            VStack {
+                                
+                                Image(item.photo)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .onTapGesture {
+                                        selectedPhoto = item.photo
+                                        sheetVisible = true
+                                    }
+                                Text(item.name)
+                                Text(String(item.privateMode))
+                            }
+                        } else if privateMode == false {
+                            
+                            VStack {
+                                
+                                Image(item.photo)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .onTapGesture {
+                                        selectedPhoto = item.photo
+                                        sheetVisible = true
+                                    }
+                                Text(item.name)
+                                Text(String(item.privateMode))
+                            }
                         }
                     }
                 }
@@ -53,14 +76,15 @@ struct JournalView: View {
             }
             .font(.title)
             .sheet(isPresented: $sheetButton) {
-                EntryItemView(entryItems: $entryItems)
+                
+                EntryItemView(entryItems: $entryItems, sheetButton: $sheetButton, privateMode: $privateMode)
             }
             
         }
         .padding()
-        .onAppear {
-            entryItems = dataEntries.getData()
-        }
+//        .onAppear {
+//            entryItems = dataEntries.getData()
+//        }
         .sheet(isPresented: $sheetVisible) {
             PhotoView(selectedPhoto: $selectedPhoto)
         }
@@ -70,5 +94,5 @@ struct JournalView: View {
 }
 
 #Preview {
-    JournalView()
+    JournalView(privateMode: .constant(false))
 }

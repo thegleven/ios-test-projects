@@ -2,7 +2,7 @@
 //  EntryItem.swift
 //  PersonalJournal
 //
-//  Created by theshamuel on 19/12/2023.
+//  Created by thegleven
 //
 
 import Foundation
