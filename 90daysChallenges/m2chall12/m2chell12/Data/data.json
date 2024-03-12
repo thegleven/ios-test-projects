@@ -1,0 +1,17 @@
+[
+    {
+        "name":"Pepperoni",
+        "toppings": ["pizza sauce", "cheese", "pepperoni"],
+        "image":"deluxe"
+    },
+    {
+        "name":"Supreme",
+        "toppings": ["bbq sauce", "cheese", "beef mince"],
+        "image":"meatlovers"
+    },
+    {
+        "name":"Hawaiian",
+        "toppings": ["pizza sauce", "ham", "pineapple"],
+        "image":"hawaiian"
+    }
+]
