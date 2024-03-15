@@ -1,0 +1,49 @@
+[
+{
+    "name":"Charles Swindoll",
+    "image":"ambition",
+    "quoteTitle":"Life is 10% what happens to me and 90% of how I react to it.",
+    "quotes":["We are all faced with a series of great opportunities brilliantly disguised as impossible situations.",
+        "Each day of our lives we make deposits in the memory banks of our children.",
+        "The remarkable thing is, we have a choice everyday regarding the attitude we will embrace for that day.",
+        "When you have vision it affects your attitude. Your attitude is optimistic rather than pessimistic.",
+        "When I think of vision, I have in mind the ability to see above and beyond the majority"]
+},
+{
+    "name":"Wayne Gretzky",
+    "image":"calm",
+    "quoteTitle":"You miss 100% of the shots you don't take.",
+    "quotes":["Hockey is a unique sport in the sense that you need each and every guy helping each other and pulling in the same direction to be successful.",
+        "Most people marry their mother. I married my father.",
+        "I wasn't naturally gifted in terms of size and speed; everything I did in hockey I worked for, and that's the way I'll be as a coach.",
+        "I get a feeling about where a teammate is going to be. A lot of times, I can turn and pass without even looking."]
+},
+{
+    "name":"Henry David Thoreau",
+    "image":"focus",
+    "quoteTitle":"Go confidently in the direction of your dreams. Live the life you have imagened.",
+    "quotes":["It's not what you look at that matters, it's what you see.",
+        "What is called genius is the abundance of life and health.",
+        "I say, beware of all enterprises that require new clothes, and not rather a new wearer of clothes.",
+        "There are a thousand hacking at the branches of evil to one who is striking at the root.",
+        "Goodness is the only investment that never fails."]
+},
+{
+    "name":"George Carlin",
+    "image":"reflect",
+    "quoteTitle":"Most people work just hard enough not to get fired and get paid just enough money not to quit.",
+    "quotes":["Don't sweat the petty things and don't pet the sweaty things.",
+        "The other night I ate at a real nice family restaurant. Every table had an argument going.",
+        "If you can't beat them, arrange to have them beaten.",
+        "Dusting is a good example of the futility of trying to put things right. As soon as you dust, the fact of your next dusting has already been established."]
+},
+{
+    "name":"Dalai Lama",
+    "image":"reflect2",
+    "quoteTitle":"The roots of all goodness lie in the soil of appreciation for goodness.",
+    "quotes":["Our prime purpose in this life is to help others. And if you can't help them, at least don't hurt them.",
+        "If you want others to be happy, practice compassion. If you want to be happy, practice compassion.",
+        "I find hope in the darkest of days, and focus in the brightest. I do not judge the universe.",
+        "All major religious traditions carry basically the same message, that is love, compassion and forgiveness the important thing is they should be part of our daily lives."]
+}
+]
