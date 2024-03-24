@@ -21,4 +21,18 @@ class Recipe: Identifiable, Decodable {
     var ingredients: [String]
     var directions: [String]
     
+    init(id: UUID? = nil, name: String, featured: Bool, image: String, description: String, prepTime: String, cookTime: String, totalTime: String, servings: Int, ingredients: [String], directions: [String]) {
+        self.id = id
+        self.name = name
+        self.featured = featured
+        self.image = image
+        self.description = description
+        self.prepTime = prepTime
+        self.cookTime = cookTime
+        self.totalTime = totalTime
+        self.servings = servings
+        self.ingredients = ingredients
+        self.directions = directions
+    }
+    
 }
