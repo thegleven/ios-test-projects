@@ -27,8 +27,8 @@ struct RecipeDetailView: View {
                         .font(.headline)
                         .padding([.bottom, .top], 5)
                     
-                    ForEach (recipe.ingredients, id:\.self) { item in
-                        Text("• " + item)
+                    ForEach (recipe.ingredients) { item in
+                        Text("• " + item.name)
                     }
                 }
                 .padding(.horizontal)
@@ -57,7 +57,7 @@ struct RecipeDetailView: View {
 }
 
 #Preview {
-    RecipeDetailView(recipe: Recipe(name:"Eggplant Parmesan",
+    RecipeDetailView(recipe: Recipe(name: "Eggplant Parmesan",
                                     featured: false,
                                     image: "eggplant parmesan",
                                     description: "Baked eggplant with bread crumbs and lots of cheese. Delicious!",
@@ -65,11 +65,8 @@ struct RecipeDetailView: View {
                                     cookTime: "35 minutes",
                                     totalTime: "1 hour",
                                     servings: 10,
-                                    ingredients: [
-                                        "3 Eggplant, peeled and thinly sliced",
-                                        "3 Large eggs"],
-                                    directions: [
-                                        "Preheat oven to 350 degrees F (175 degrees C).",
-                                        "Dip eggplant slices in egg, then in bread crumbs. Place in a single layer on a baking sheet. Bake in preheated oven for 5 minutes on each side."
-                                    ]))
+                                    highlights: ["Vegetarian", "Healthy", "Easy clean-up"],
+                                    ingredients:[],
+                                    directions: ["Preheat oven to 350 degrees F (175 degrees C).",
+                                                                            "Dip eggplant slices in egg, then in bread crumbs. Place in a single layer on a baking sheet. Bake in preheated oven for 5 minutes on each side."]))
 }
