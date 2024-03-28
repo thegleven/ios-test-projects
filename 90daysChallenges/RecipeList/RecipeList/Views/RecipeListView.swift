@@ -9,11 +9,12 @@ import SwiftUI
 
 struct RecipeListView: View {
     
-    @ObservedObject var model = RecipeModel()
+    @EnvironmentObject var model: RecipeModel
     
     var body: some View {
         
         NavigationView {
+            
             List(model.recipes) { item in
                 
                 NavigationLink(
@@ -38,5 +39,5 @@ struct RecipeListView: View {
 }
 
 #Preview {
-    RecipeListView()
+    RecipeListView().environmentObject(RecipeModel())
 }

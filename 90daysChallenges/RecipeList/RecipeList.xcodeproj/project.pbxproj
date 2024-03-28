@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C72AD6C2BB58ACC00693080 /* RecipeFeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C72AD6B2BB58ACC00693080 /* RecipeFeaturedView.swift */; };
 		5CE5249A2BAC5FB900BCCBC9 /* RecipeListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE524992BAC5FB900BCCBC9 /* RecipeListApp.swift */; };
 		5CE5249C2BAC5FB900BCCBC9 /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE5249B2BAC5FB900BCCBC9 /* RecipeListView.swift */; };
 		5CE5249E2BAC5FBA00BCCBC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE5249D2BAC5FBA00BCCBC9 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C72AD6B2BB58ACC00693080 /* RecipeFeaturedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFeaturedView.swift; sourceTree = "<group>"; };
 		5CE524962BAC5FB900BCCBC9 /* RecipeList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE524992BAC5FB900BCCBC9 /* RecipeListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListApp.swift; sourceTree = "<group>"; };
 		5CE5249B2BAC5FB900BCCBC9 /* RecipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListView.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				5CE5249B2BAC5FB900BCCBC9 /* RecipeListView.swift */,
 				5CE524B42BAC639D00BCCBC9 /* RecipeDetailView.swift */,
 				5CF903192BB0A519005C1615 /* RecipeTabView.swift */,
+				5C72AD6B2BB58ACC00693080 /* RecipeFeaturedView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				5CE524B32BAC62AC00BCCBC9 /* RecipeModel.swift in Sources */,
 				5CE5249A2BAC5FB900BCCBC9 /* RecipeListApp.swift in Sources */,
 				5CE524B12BAC61E600BCCBC9 /* DataService.swift in Sources */,
+				5C72AD6C2BB58ACC00693080 /* RecipeFeaturedView.swift in Sources */,
 				5CF9031A2BB0A519005C1615 /* RecipeTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
