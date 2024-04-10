@@ -1,14 +1,14 @@
 //
-//  m4chall7App.swift
-//  m4chall7
+//  m4chall8App.swift
+//  m4chall8
 //
-//  Created on 09/04/2024.
+//  Created on 10/04/2024.
 //
 
 import SwiftUI
 
 @main
-struct m4chall7App: App {
+struct m4chall8App: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
