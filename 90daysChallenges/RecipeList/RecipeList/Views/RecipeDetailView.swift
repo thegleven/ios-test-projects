@@ -52,7 +52,7 @@ struct RecipeDetailView: View {
                         Text("• " + RecipeModel.getPortion(ingredient: item,
                                                            recipeServings: recipe.servings,
                                                            targetServings: selectedServingSize)
-                             + " " + item.name)
+                             + " " + item.name.lowercased())
                     }
                 }
                 .padding(.horizontal)
