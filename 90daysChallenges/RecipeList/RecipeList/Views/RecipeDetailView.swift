@@ -24,9 +24,10 @@ struct RecipeDetailView: View {
                     .scaledToFill()
                 
                 Text(recipe.name)
-                    .font(.title)
+                    .font(.largeTitle)
                     .bold()
-                    .padding()
+                    .padding(.top, 20)
+                    .padding(.leading)
                 
                 VStack(alignment: .leading) {
                     
@@ -76,21 +77,15 @@ struct RecipeDetailView: View {
             }
             
         }
-        .navigationBarTitle(recipe.name)
     }
 }
 
-#Preview {
-    RecipeDetailView(recipe: Recipe(name: "Eggplant Parmesan",
-                                    featured: false,
-                                    image: "eggplant parmesan",
-                                    description: "Baked eggplant with bread crumbs and lots of cheese. Delicious!",
-                                    prepTime: "25 minutes",
-                                    cookTime: "35 minutes",
-                                    totalTime: "1 hour",
-                                    servings: 10,
-                                    highlights: ["Vegetarian", "Healthy", "Easy clean-up"],
-                                    ingredients:[],
-                                    directions: ["Preheat oven to 350 degrees F (175 degrees C).",
-                                                                            "Dip eggplant slices in egg, then in bread crumbs. Place in a single layer on a baking sheet. Bake in preheated oven for 5 minutes on each side."]))
+struct RecipeDetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        
+        // Create a dummy recipe and pass it into the detail view so that we can see a preview
+        let model = RecipeModel()
+        
+        RecipeDetailView(recipe: model.recipes[0])
+    }
 }
