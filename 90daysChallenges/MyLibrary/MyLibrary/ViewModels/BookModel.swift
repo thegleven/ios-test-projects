@@ -1,0 +1,46 @@
+//
+//  BookModel.swift
+//  MyLibrary
+//
+//  Created by theshamuel on 25/04/2024.
+//
+
+import Foundation
+
+class BookModel: ObservableObject {
+    
+    @Published var books = [Book]()
+    
+    init() {
+        // Get members from JSON
+        self.books = getDataJson()
+    }
+    
+    func getDataJson() -> [Book] {
+        
+        // Get path in app bundle
+        let pathString = Bundle.main.path(forResource: "books", ofType: "json")
+        
+        if let pathString = pathString {
+        
+            // Create URL object
+            let url = URL(fileURLWithPath: pathString)
+            
+            do {
+                // Create Data object
+                let data = try Data(contentsOf: url)
+                
+                // Decode the json data
+                let decoder = JSONDecoder()
+                books = try decoder.decode([Book].self, from: data)
+                
+                return books
+            }
+            catch {
+                print("error")
+            }
+        }
+        
+        return [Book]()
+    }
+}
