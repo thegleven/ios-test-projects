@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  MyLibrary
 //
-//  Created by theshamuel on 25/04/2024.
+//  Created on 25/04/2024.
 //
 
 import SwiftUI
@@ -20,13 +20,15 @@ struct BookList: View {
                     
                     ForEach (model.books) { book in
                         
-                        NavigationLink(destination: BookCard(book: book)) {
+                        NavigationLink(destination: Staging(book: book)) {
                             BookCard(book: book)
+                                .padding([.leading, .trailing], 20)
                         }
-                        .padding([.leading, .trailing], 20)
                     }
                 }
+                .padding(.top)
             }
+            .navigationTitle("My Library")
         }
     }
 }

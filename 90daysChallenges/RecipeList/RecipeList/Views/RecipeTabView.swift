@@ -27,7 +27,8 @@ struct RecipeTabView: View {
                         Text("List")
                     }
                 }
-        }.environmentObject(RecipeModel())
+        }
+        .environmentObject(RecipeModel())
     }
 }
 
