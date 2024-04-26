@@ -2,7 +2,7 @@
 //  BookModel.swift
 //  MyLibrary
 //
-//  Created by theshamuel on 25/04/2024.
+//  Created on 25/04/2024.
 //
 
 import Foundation

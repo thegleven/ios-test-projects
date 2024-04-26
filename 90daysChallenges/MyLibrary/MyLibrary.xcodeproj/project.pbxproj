@@ -15,6 +15,7 @@
 		5C30E13C2BDA6E0300B30FFB /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C30E13B2BDA6E0300B30FFB /* Book.swift */; };
 		5C30E13E2BDA6F4600B30FFB /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C30E13D2BDA6F4600B30FFB /* BookModel.swift */; };
 		5C30E1402BDA754300B30FFB /* BookCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C30E13F2BDA754300B30FFB /* BookCard.swift */; };
+		5CF769432BDBBFF10002DA9C /* Staging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF769422BDBBFF10002DA9C /* Staging.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		5C30E13B2BDA6E0300B30FFB /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		5C30E13D2BDA6F4600B30FFB /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 		5C30E13F2BDA754300B30FFB /* BookCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCard.swift; sourceTree = "<group>"; };
+		5CF769422BDBBFF10002DA9C /* Staging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Staging.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			children = (
 				5C30E1292BDA699800B30FFB /* BookList.swift */,
 				5C30E13F2BDA754300B30FFB /* BookCard.swift */,
+				5CF769422BDBBFF10002DA9C /* Staging.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C30E12A2BDA699800B30FFB /* BookList.swift in Sources */,
+				5CF769432BDBBFF10002DA9C /* Staging.swift in Sources */,
 				5C30E1402BDA754300B30FFB /* BookCard.swift in Sources */,
 				5C30E1282BDA699800B30FFB /* MyLibraryApp.swift in Sources */,
 				5C30E13E2BDA6F4600B30FFB /* BookModel.swift in Sources */,
