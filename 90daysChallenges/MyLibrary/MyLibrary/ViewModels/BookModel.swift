@@ -51,4 +51,17 @@ class BookModel: ObservableObject {
         }
     }
     
+    func updateRating(forId: Int, rating: Int) {
+        
+        if let index = books.firstIndex(where: { $0.id == forId}) {
+            books[index].rating = rating
+        }
+    }
+    
+    func updateFavourite(forId: Int) {
+        if let index = books.firstIndex(where: { $0.id == forId}) {
+            books[index].isFavourite.toggle()
+        }
+    }
+    
 }

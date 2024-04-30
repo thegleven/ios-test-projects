@@ -17,7 +17,7 @@ struct Staging: View {
         
         VStack(spacing: 20) {
             
-            NavigationLink(destination: BookCard(book: book)) {
+            NavigationLink(destination: BookContent(book: book)) {
                 
                 VStack {
                     Text("Read Now!")
@@ -34,7 +34,7 @@ struct Staging: View {
             Text("Mark for later")
                 .font(.headline)
             
-            Button(action: {
+            Button(action: { model.updateFavourite(forId: book.id)
                 
             }, label: {
                 Image(systemName: book.isFavourite ? "star.fill" : "star")
@@ -56,6 +56,9 @@ struct Staging: View {
             }
             .pickerStyle(SegmentedPickerStyle())
             .padding([.leading, .trailing, .bottom], 60)
+            .onChange(of: rating, perform: { value in
+                model.updateRating(forId: book.id, rating: rating)
+            })
             
         }
         .onAppear { rating = book.rating }
@@ -72,4 +75,5 @@ struct Staging: View {
                        currentPage: 1,
                        rating: 1,
                        content: ["", ""]))
+    .environmentObject(BookModel())
 }
