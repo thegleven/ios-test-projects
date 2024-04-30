@@ -43,4 +43,12 @@ class BookModel: ObservableObject {
         
         return [Book]()
     }
+    
+    func updatePage(forId: Int, page: Int) {
+        
+        if let index = books.firstIndex(where: { $0.id == forId}) {
+            books[index].currentPage = page
+        }
+    }
+    
 }
