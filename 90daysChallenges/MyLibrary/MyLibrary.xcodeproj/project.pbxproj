@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C29DFDD2BE0FE6D001FB0A3 /* BookContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C29DFDC2BE0FE6D001FB0A3 /* BookContent.swift */; };
 		5C30E1282BDA699800B30FFB /* MyLibraryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C30E1272BDA699800B30FFB /* MyLibraryApp.swift */; };
 		5C30E12A2BDA699800B30FFB /* BookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C30E1292BDA699800B30FFB /* BookList.swift */; };
 		5C30E12C2BDA699A00B30FFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C30E12B2BDA699A00B30FFB /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C29DFDC2BE0FE6D001FB0A3 /* BookContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookContent.swift; sourceTree = "<group>"; };
 		5C30E1242BDA699800B30FFB /* MyLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C30E1272BDA699800B30FFB /* MyLibraryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLibraryApp.swift; sourceTree = "<group>"; };
 		5C30E1292BDA699800B30FFB /* BookList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookList.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				5C30E1292BDA699800B30FFB /* BookList.swift */,
 				5C30E13F2BDA754300B30FFB /* BookCard.swift */,
 				5CF769422BDBBFF10002DA9C /* Staging.swift */,
+				5C29DFDC2BE0FE6D001FB0A3 /* BookContent.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			files = (
 				5C30E12A2BDA699800B30FFB /* BookList.swift in Sources */,
 				5CF769432BDBBFF10002DA9C /* Staging.swift in Sources */,
+				5C29DFDD2BE0FE6D001FB0A3 /* BookContent.swift in Sources */,
 				5C30E1402BDA754300B30FFB /* BookCard.swift in Sources */,
 				5C30E1282BDA699800B30FFB /* MyLibraryApp.swift in Sources */,
 				5C30E13E2BDA6F4600B30FFB /* BookModel.swift in Sources */,
