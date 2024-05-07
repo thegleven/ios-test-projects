@@ -31,16 +31,12 @@ struct BookContent: View {
             }
             .padding()
         }
-        .tabViewStyle(PageTabViewStyle())
+        .tabViewStyle(.page)
         .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .never))
-        
-        .onChange(of: page) { oldValue, newValue in
-            model.updatePage(forId: book.id, page: page)
-        }
-        
         .onAppear {
             page = book.currentPage
-        }
+        }        
+       
     }
 }
 
@@ -49,8 +45,8 @@ struct BookContent: View {
                            title: "test",
                            author: "Test",
                            isFavourite: true,
-                           currentPage: 0,
+                           currentPage: 10,
                            rating: 2,
-                           content: ["test","test"]))
+                           content: ["test1","test2","test3","test4","test5"]))
         .environmentObject(BookModel())
 }
