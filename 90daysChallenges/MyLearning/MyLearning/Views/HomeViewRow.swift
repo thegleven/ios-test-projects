@@ -81,5 +81,5 @@ struct HomeViewRow: View {
 }
 
 #Preview {
-    HomeViewRow(image: "", title: "", description: "", count: "test", time: "")
+    HomeViewRow(image: "", title: "tets", description: "Understand the fundamentals of the Swift programming language.", count: "test", time: "14")
 }
