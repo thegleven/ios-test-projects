@@ -2,7 +2,7 @@
 //  ContentViewRow.swift
 //  MyLearning
 //
-//  Created by theshamuel on 13/05/2024.
+//  Created on 13/05/2024.
 //
 
 import SwiftUI
