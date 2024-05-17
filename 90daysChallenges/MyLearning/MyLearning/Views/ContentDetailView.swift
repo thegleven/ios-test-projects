@@ -57,7 +57,7 @@ struct ContentDetailView: View {
     }
 }
 
-#Preview {
-    ContentDetailView()
-       // .environmentObject(ContentModel())
-}
+//#Preview {
+//    ContentDetailView()
+//        .environmentObject(ContentModel())
+//}
