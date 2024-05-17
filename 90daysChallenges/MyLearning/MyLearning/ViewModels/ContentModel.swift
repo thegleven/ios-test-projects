@@ -97,7 +97,7 @@ class ContentModel: ObservableObject {
     func nextLesson() {
         
         //advance the lesson index
-        currentLessonIndex += 1
+        currentLessonIndex = currentLessonIndex + 1
         
         //check that it is within range
         if currentLessonIndex < currentModule!.content.lessons.count {

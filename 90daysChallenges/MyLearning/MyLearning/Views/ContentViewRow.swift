@@ -35,7 +35,7 @@ struct ContentViewRow: View {
                     Text(lesson.title)
                         .bold()
                     
-                    Text(lesson.duration)
+                    Text("Video - \(lesson.duration)")
                 }
             }
             .padding()
