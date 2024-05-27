@@ -34,6 +34,8 @@ struct HomeView: View {
                                         .onAppear(perform: {
                                             model.beginModule(module.id)
                                         }),
+                                    tag: module.id,
+                                    selection: $model.currentContentSelected,
                                     label: {
                                         //Learning
                                         HomeViewRow(image: module.content.image,
