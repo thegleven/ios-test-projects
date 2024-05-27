@@ -19,6 +19,7 @@
 		5C3B9E472BF4D7CF00546570 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3B9E462BF4D7CF00546570 /* Constants.swift */; };
 		5C5E6B412C009FE3002F0F1D /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5E6B402C009FE3002F0F1D /* CodeTextView.swift */; };
 		5CBE93872BEE41B700B39B65 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBE93862BEE41B700B39B65 /* HomeViewRow.swift */; };
+		5CCC6D062C04E4CD0094CC14 /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCC6D052C04E4CD0094CC14 /* RectangleCard.swift */; };
 		5CEEC7152BF7678A0003C612 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CEEC7142BF7678A0003C612 /* AVKit.framework */; };
 		5CF86E0D2BF228660081B364 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF86E0C2BF228660081B364 /* ContentView.swift */; };
 		5CF86E0F2BF23DA00081B364 /* ContentViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF86E0E2BF23DA00081B364 /* ContentViewRow.swift */; };
@@ -38,6 +39,7 @@
 		5C3B9E462BF4D7CF00546570 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5C5E6B402C009FE3002F0F1D /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
 		5CBE93862BEE41B700B39B65 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
+		5CCC6D052C04E4CD0094CC14 /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
 		5CEEC7142BF7678A0003C612 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		5CF86E0C2BF228660081B364 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5CF86E0E2BF23DA00081B364 /* ContentViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewRow.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				5CF86E0E2BF23DA00081B364 /* ContentViewRow.swift */,
 				5C3B9E442BF4D51E00546570 /* ContentDetailView.swift */,
 				5C5E6B402C009FE3002F0F1D /* CodeTextView.swift */,
+				5CCC6D052C04E4CD0094CC14 /* RectangleCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				5C5E6B412C009FE3002F0F1D /* CodeTextView.swift in Sources */,
 				5C084CC72BEB8CFE00509286 /* ContentModel.swift in Sources */,
 				5C084CCD2BEB93A600509286 /* Models.swift in Sources */,
+				5CCC6D062C04E4CD0094CC14 /* RectangleCard.swift in Sources */,
 				5C3B9E472BF4D7CF00546570 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
