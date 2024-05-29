@@ -126,8 +126,8 @@
             filePath = "MyLearning/ViewModels/ContentModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "beginLesson(_:)"
             landmarkType = "7">
          </BreakpointContent>
