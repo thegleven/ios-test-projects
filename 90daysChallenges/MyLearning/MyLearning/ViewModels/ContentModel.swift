@@ -101,7 +101,10 @@ class ContentModel: ObservableObject {
                 
                 let modules = try decoder.decode([Module].self, from: data!)
                 
-                self.modules += modules
+                DispatchQueue.main.async {
+                    
+                    self.modules += modules
+                }
             }
             catch {
                 
@@ -167,6 +170,10 @@ class ContentModel: ObservableObject {
     }
     
     func hasNextLesson() -> Bool {
+        
+        guard currentModule != nil else {
+            return false
+        }
         
         return (currentLessonIndex + 1 < currentModule!.content.lessons.count)
     }
