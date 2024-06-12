@@ -39,4 +39,9 @@ class Model: ObservableObject {
         }
         .resume()
     }
+    
+    func filterVideos(_ searchText: String) {
+        
+        videos = allVideo.filter({ searchText.isEmpty ? true : $0.title.localizedCaseInsensitiveContains(searchText)})
+    }
 }
