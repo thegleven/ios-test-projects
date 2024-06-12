@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "title": "How To Make An App for Beginners 2021 / SwiftUI - Lesson 1",
+        "url": "https://codewithchris.github.io/Module5Challenge/Lesson%201.mp4",
+    },
+    {
+        "id": 2,
+        "title": "How To Make An App - Xcode Tutorial (SwiftUI)",
+        "url": "https://codewithchris.github.io/Module5Challenge/Lesson%202.mp4",
+    },
+    {
+        "id": 3,
+        "title": "Build User Interfaces with SwiftUI - Lesson 3 (How To Make An App)",
+        "url": "https://codewithchris.github.io/Module5Challenge/Lesson%203.mp4",
+    },
+    {
+        "id": 4,
+        "title": "SwiftUI Essential Views and Containers - Lesson 4 (How To Make An App)",
+        "url": "https://codewithchris.github.io/Module5Challenge/Lesson%204.mp4",
+    },
+    {
+        "id": 5,
+        "title": "How To Make An App - War Card Game UI Construction (Lesson 5)",
+        "url": "https://codewithchris.github.io/Module5Challenge/Lesson%205.mp4",
+    },
+    {
+        "id": 6,
+        "title": "Swift Programming Basics: View Update Lifecycle, Variables and Constants (Lesson 6)",
+        "url": "https://codewithchris.github.io/Module5Challenge/Lesson%206.mp4",
+    },
+    {
+        "id": 7,
+        "title": "Swift Programming Basis: Functions (Lesson 7)",
+        "url": "https://codewithchris.github.io/Module5Challenge/Lesson%207.mp4",
+    },
+    {
+        "id": 8,
+        "title": "Swift Programming Basics: Structures (Lesson 8)",
+        "url": "https://codewithchris.github.io/Module5Challenge/Lesson%208.mp4",
+    },
+    {
+        "id": 9,
+        "title": "Swift Programming Basics: Instances (Lesson 9)",
+        "url": "https://codewithchris.github.io/Module5Challenge/Lesson%209.mp4",
+    },
+    {
+        "id": 10,
+        "title": "SwiftUI Buttons (Lesson 10)",
+        "url": "https://codewithchris.github.io/Module5Challenge/Lesson%2010.mp4",
+    },
+    {
+        "id": 11,
+        "title": "SwiftUI State Properties (Lesson 11 of 14)",
+        "url": "https://codewithchris.github.io/Module5Challenge/Lesson%2011.mp4",
+    },
+    {
+        "id": 12,
+        "title": "SwiftUI Programming - If Statements (Lesson 12 of 14)",
+        "url": "https://codewithchris.github.io/Module5Challenge/Lesson%2012.mp4",
+    },
+    {
+        "id": 13,
+        "title": "Bonus Challenge (Lesson 13)",
+        "url": "https://codewithchris.github.io/Module5Challenge/Lesson%2013.mp4",
+    },
+    {
+        "id": 14,
+        "title": "What's Next? (14 Day SwiftUI Beginner Challenge)",
+        "url": "https://codewithchris.github.io/Module5Challenge/Lesson%2014.mp4",
+    }
+]

@@ -6,19 +6,32 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct SearchView: View {
+    
+    @ObservedObject var model: Model
+    @State private var searchText = ""
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+        NavigationView {
+            List {
+                SearchBar(text: $searchText)
+                
+                ForEach(model.videos) { video in
+                    NavigationLink(video.title, destination: VideoPlayerView(video: video))
+                }
+            }
+            .navigationBarTitle(Text("All video"))
+            .onChange(of: searchText) { text in
+                model.filterVideos(text)
+                
+            }
         }
-        .padding()
     }
 }
 
 #Preview {
-    SearchView()
+    SearchView(model: Model())
 }

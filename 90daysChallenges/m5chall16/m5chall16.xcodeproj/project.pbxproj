@@ -14,6 +14,9 @@
 		5CA117DD2C18713500AA2CF0 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CA117DC2C18713500AA2CF0 /* AVKit.framework */; };
 		5CA117DF2C18735700AA2CF0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA117DE2C18735700AA2CF0 /* Model.swift */; };
 		5CA117E12C1873E900AA2CF0 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA117E02C1873E900AA2CF0 /* Video.swift */; };
+		5CE34CC02C19B10F001AA113 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE34CBF2C19B10F001AA113 /* VideoPlayerView.swift */; };
+		5CE34CC22C19B30A001AA113 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE34CC12C19B30A001AA113 /* SearchBar.swift */; };
+		5CE34CC42C19B9E2001AA113 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CE34CC32C19B9E2001AA113 /* Data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		5CA117DC2C18713500AA2CF0 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		5CA117DE2C18735700AA2CF0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		5CA117E02C1873E900AA2CF0 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		5CE34CBF2C19B10F001AA113 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		5CE34CC12C19B30A001AA113 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		5CE34CC32C19B9E2001AA113 /* Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +67,11 @@
 			children = (
 				5CA117CD2C1870CA00AA2CF0 /* m5chall16App.swift */,
 				5CA117CF2C1870CA00AA2CF0 /* SearchView.swift */,
+				5CE34CC12C19B30A001AA113 /* SearchBar.swift */,
+				5CE34CBF2C19B10F001AA113 /* VideoPlayerView.swift */,
 				5CA117DE2C18735700AA2CF0 /* Model.swift */,
 				5CA117E02C1873E900AA2CF0 /* Video.swift */,
+				5CE34CC32C19B9E2001AA113 /* Data.json */,
 				5CA117D12C1870CC00AA2CF0 /* Assets.xcassets */,
 				5CA117D32C1870CC00AA2CF0 /* Preview Content */,
 			);
@@ -145,6 +154,7 @@
 			files = (
 				5CA117D52C1870CC00AA2CF0 /* Preview Assets.xcassets in Resources */,
 				5CA117D22C1870CC00AA2CF0 /* Assets.xcassets in Resources */,
+				5CE34CC42C19B9E2001AA113 /* Data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +169,8 @@
 				5CA117E12C1873E900AA2CF0 /* Video.swift in Sources */,
 				5CA117D02C1870CA00AA2CF0 /* SearchView.swift in Sources */,
 				5CA117CE2C1870CA00AA2CF0 /* m5chall16App.swift in Sources */,
+				5CE34CC02C19B10F001AA113 /* VideoPlayerView.swift in Sources */,
+				5CE34CC22C19B30A001AA113 /* SearchBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

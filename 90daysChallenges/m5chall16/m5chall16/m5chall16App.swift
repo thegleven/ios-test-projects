@@ -11,7 +11,7 @@ import SwiftUI
 struct m5chall16App: App {
     var body: some Scene {
         WindowGroup {
-            SearchView()
+            SearchView(model: Model())
         }
     }
 }
