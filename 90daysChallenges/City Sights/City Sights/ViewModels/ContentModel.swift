@@ -12,49 +12,58 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
     
     var locationManager = CLLocationManager()
     
+    @Published var authorizationState = CLAuthorizationStatus.notDetermined
+    
+    @Published var restaurants = [Business]()
+    @Published var sights = [Business]()
+    
     override init() {
         
-        //init method of NSObject
+        // Init method of NSObject
         super.init()
         
-        //set content model as the delegate of the location manager
+        // Set content model as the delegate of the location manager
         locationManager.delegate = self
         
-        //request permission from the user
+        // Request permission from the user
         locationManager.requestWhenInUseAuthorization()
+        
     }
     
     // MARK: - Location Manager Delegate Methods
-    
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        
+        // Update the authorizationState property
+        authorizationState = locationManager.authorizationStatus
         
         if locationManager.authorizationStatus == .authorizedAlways ||
             locationManager.authorizationStatus == .authorizedWhenInUse {
             
-            //we have permission, start
+            // We have permission
+            // Start geolocating the user, after we get permission
             locationManager.startUpdatingLocation()
         }
         else if locationManager.authorizationStatus == .denied {
-            
-            //we do not have permission
+            // We don't have permission
         }
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        //gives us the location of the user
+        // Gives us the location of the user
         let userLocation = locations.first
         
         if userLocation != nil {
             
-            //we have a location
-            //stop requesting the location after we get it once
+            // We have a location
+            // Stop requesting the location after we get it once
             locationManager.stopUpdatingLocation()
             
-            //if we have the coordinates of the user, send into Yelp API
-            //getBusinesses(category: "arts", location: userLocation!)
-            getBusinesses(category: "restaurants", location: userLocation!)
+            // If we have the coordinates of the user, send into Yelp API
+            getBusinesses(category: Constants.sightsKey, location: userLocation!)
+            getBusinesses(category: Constants.restaurantsKey, location: userLocation!)
         }
+        
     }
     
     // MARK: - Yelp API methods
@@ -66,7 +75,7 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
         let urlString = "https://api.yelp.com/v3/businesses/search?latitude=\(location.coordinate.latitude)&longitude=\(location.coordinate.longitude)&categories=\(category)&limit=6"
         let url = URL(string: urlString
         */
-        var urlComponents = URLComponents(string: "https://api.yelp.com/v3/businesses/search")
+        var urlComponents = URLComponents(string: Constants.apiUrl)
         urlComponents?.queryItems = [
             URLQueryItem(name: "latitude", value: String(location.coordinate.latitude)),
             URLQueryItem(name: "longitude", value: String(location.coordinate.longitude)),
@@ -80,8 +89,7 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
             // Create URL Request
             var request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10.0)
             request.httpMethod = "GET"
-            request.addValue("Bearer XXX", forHTTPHeaderField: "Authorization")
-
+            request.addValue("Bearer \(Constants.apiKey)", forHTTPHeaderField: "Authorization")
             
             // Get URLSession
             let session = URLSession.shared
@@ -91,13 +99,45 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
                 
                 // Check that there isn't an error
                 if error == nil {
-                    print(response)
+                    
+                    do {
+                        // Parse json
+                        let decoder = JSONDecoder()
+                        let result = try decoder.decode(BusinessSearch.self, from: data!)
+                        
+                        // Sort businesses
+                        var businesses = result.businesses
+                        businesses.sort { (b1, b2) -> Bool in
+                            return b1.distance ?? 0 < b2.distance ?? 0
+                        }
+                        
+                        // Call the get image function of the businesses
+                        for b in businesses {
+                            b.getImageData()
+                        }
+                        
+                        DispatchQueue.main.async {
+                            
+                            // Assign results to the appropriate property
+                            
+                            switch category {
+                            case Constants.sightsKey:
+                                self.sights = businesses
+                            case Constants.restaurantsKey:
+                                self.restaurants = businesses
+                            default:
+                                break
+                            }
+                        }
+                    }
+                    catch {
+                        print(error)
+                    }
                 }
             }
             
             // Start the Data Task
             dataTask.resume()
         }
-        
     }
 }
