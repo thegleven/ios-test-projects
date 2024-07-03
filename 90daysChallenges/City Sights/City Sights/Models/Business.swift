@@ -74,6 +74,11 @@ class Business: Decodable, Identifiable, ObservableObject {
             dataTask.resume()
         }
     }
+    
+    static func getTestData() -> Business {
+        let b = Business()
+        return b
+    }
 }
 
 struct Location: Decodable {
@@ -89,14 +94,12 @@ struct Location: Decodable {
     enum CodingKeys: String, CodingKey {
         case zipCode = "zip_code"
         case displayAddress = "display_address"
-        
         case address1
         case address2
         case address3
         case city
         case country
         case state
-        
     }
 }
 
