@@ -82,6 +82,7 @@ class Business: Decodable, Identifiable, ObservableObject {
 }
 
 struct Location: Decodable {
+    
     var address1: String?
     var address2: String?
     var address3: String?

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5C6697092C3580DD0088E0D2 /* BusinessDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6697082C3580DD0088E0D2 /* BusinessDetail.swift */; };
+		5CC5CB722C36C5BF0057E7EC /* BusinessMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5CB712C36C5BF0057E7EC /* BusinessMap.swift */; };
+		5CC5CB752C36C6010057E7EC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC5CB742C36C6010057E7EC /* MapKit.framework */; };
 		5CD0619A2C1AFD0B0019F198 /* City_SightsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD061992C1AFD0B0019F198 /* City_SightsApp.swift */; };
 		5CD0619C2C1AFD0B0019F198 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD0619B2C1AFD0B0019F198 /* LaunchView.swift */; };
 		5CD0619E2C1AFD0D0019F198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CD0619D2C1AFD0D0019F198 /* Assets.xcassets */; };
@@ -25,6 +27,8 @@
 
 /* Begin PBXFileReference section */
 		5C6697082C3580DD0088E0D2 /* BusinessDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetail.swift; sourceTree = "<group>"; };
+		5CC5CB712C36C5BF0057E7EC /* BusinessMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessMap.swift; sourceTree = "<group>"; };
+		5CC5CB742C36C6010057E7EC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5CD061962C1AFD0B0019F198 /* City Sights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "City Sights.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CD061992C1AFD0B0019F198 /* City_SightsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City_SightsApp.swift; sourceTree = "<group>"; };
 		5CD0619B2C1AFD0B0019F198 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
@@ -46,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CC5CB752C36C6010057E7EC /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,11 +65,28 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		5CC5CB702C36C58F0057E7EC /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				5CC5CB712C36C5BF0057E7EC /* BusinessMap.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		5CC5CB732C36C6010057E7EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CC5CB742C36C6010057E7EC /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5CD0618D2C1AFD0B0019F198 = {
 			isa = PBXGroup;
 			children = (
 				5CD061982C1AFD0B0019F198 /* City Sights */,
 				5CD061972C1AFD0B0019F198 /* Products */,
+				5CC5CB732C36C6010057E7EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +161,7 @@
 			children = (
 				5CFAD8DF2C341E84002B9D58 /* HomeView.swift */,
 				5CFAD8E12C341EE2002B9D58 /* List */,
+				5CC5CB702C36C58F0057E7EC /* Map */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -248,6 +271,7 @@
 				5C6697092C3580DD0088E0D2 /* BusinessDetail.swift in Sources */,
 				5CD0619A2C1AFD0B0019F198 /* City_SightsApp.swift in Sources */,
 				5CFAD8D82C341BE4002B9D58 /* BusinessSearch.swift in Sources */,
+				5CC5CB722C36C5BF0057E7EC /* BusinessMap.swift in Sources */,
 				5CFAD8ED2C3420D2002B9D58 /* BusinessSection.swift in Sources */,
 				5CD061AB2C1B00460019F198 /* ContentModel.swift in Sources */,
 				5CFAD8DB2C341CCA002B9D58 /* Constants.swift in Sources */,
