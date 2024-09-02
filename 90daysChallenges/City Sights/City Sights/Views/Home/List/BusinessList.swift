@@ -2,7 +2,7 @@
 //  BusinessList.swift
 //  City Sights
 //
-//  Created by theshamuel on 02/07/2024.
+//  Created on 02/07/2024.
 //
 
 import SwiftUI
