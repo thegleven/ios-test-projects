@@ -27,7 +27,6 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
         
         // Request permission from the user
         locationManager.requestWhenInUseAuthorization()
-        
     }
     
     // MARK: - Location Manager Delegate Methods
@@ -63,7 +62,6 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
             getBusinesses(category: Constants.sightsKey, location: userLocation!)
             getBusinesses(category: Constants.restaurantsKey, location: userLocation!)
         }
-        
     }
     
     // MARK: - Yelp API methods
@@ -82,6 +80,7 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
             URLQueryItem(name: "categories", value: category),
             URLQueryItem(name: "limit", value: "6")
         ]
+        
         let url = urlComponents?.url
         
         if let url = url {
@@ -119,7 +118,6 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
                         DispatchQueue.main.async {
                             
                             // Assign results to the appropriate property
-                            
                             switch category {
                             case Constants.sightsKey:
                                 self.sights = businesses

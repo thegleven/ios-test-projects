@@ -82,7 +82,6 @@ class Business: Decodable, Identifiable, ObservableObject {
 }
 
 struct Location: Decodable {
-    
     var address1: String?
     var address2: String?
     var address3: String?
@@ -95,12 +94,14 @@ struct Location: Decodable {
     enum CodingKeys: String, CodingKey {
         case zipCode = "zip_code"
         case displayAddress = "display_address"
+        
         case address1
         case address2
         case address3
         case city
         case country
         case state
+        
     }
 }
 
@@ -113,4 +114,5 @@ struct Coordinate: Decodable {
     var latitude: Double?
     var longitude: Double?
 }
+
 
