@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5C6697092C3580DD0088E0D2 /* BusinessDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6697082C3580DD0088E0D2 /* BusinessDetail.swift */; };
+		5CBA7E5E2C88748C00FE1E1C /* DirectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBA7E5D2C88748C00FE1E1C /* DirectionsView.swift */; };
+		5CBA7E602C88764200FE1E1C /* BusinessTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBA7E5F2C88764200FE1E1C /* BusinessTitle.swift */; };
+		5CBA7E622C88778A00FE1E1C /* DirectionsMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBA7E612C88778A00FE1E1C /* DirectionsMap.swift */; };
 		5CC5CB722C36C5BF0057E7EC /* BusinessMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5CB712C36C5BF0057E7EC /* BusinessMap.swift */; };
 		5CC5CB752C36C6010057E7EC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC5CB742C36C6010057E7EC /* MapKit.framework */; };
 		5CD0619A2C1AFD0B0019F198 /* City_SightsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD061992C1AFD0B0019F198 /* City_SightsApp.swift */; };
@@ -27,6 +30,9 @@
 
 /* Begin PBXFileReference section */
 		5C6697082C3580DD0088E0D2 /* BusinessDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetail.swift; sourceTree = "<group>"; };
+		5CBA7E5D2C88748C00FE1E1C /* DirectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsView.swift; sourceTree = "<group>"; };
+		5CBA7E5F2C88764200FE1E1C /* BusinessTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessTitle.swift; sourceTree = "<group>"; };
+		5CBA7E612C88778A00FE1E1C /* DirectionsMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsMap.swift; sourceTree = "<group>"; };
 		5CC5CB712C36C5BF0057E7EC /* BusinessMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessMap.swift; sourceTree = "<group>"; };
 		5CC5CB742C36C6010057E7EC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5CD061962C1AFD0B0019F198 /* City Sights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "City Sights.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				5C6697082C3580DD0088E0D2 /* BusinessDetail.swift */,
+				5CBA7E5D2C88748C00FE1E1C /* DirectionsView.swift */,
+				5CBA7E5F2C88764200FE1E1C /* BusinessTitle.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -69,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				5CC5CB712C36C5BF0057E7EC /* BusinessMap.swift */,
+				5CBA7E612C88778A00FE1E1C /* DirectionsMap.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -160,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				5CFAD8DF2C341E84002B9D58 /* HomeView.swift */,
+				5C6697072C3580BE0088E0D2 /* Detail */,
 				5CC5CB702C36C58F0057E7EC /* Map */,
 				5CFAD8E12C341EE2002B9D58 /* List */,
 			);
@@ -187,7 +197,6 @@
 				5CFAD8EA2C342080002B9D58 /* BusinessSectionHeader.swift */,
 				5CFAD8EC2C3420D2002B9D58 /* BusinessSection.swift */,
 				5CFAD8EE2C342614002B9D58 /* BusinessRow.swift */,
-				5C6697072C3580BE0088E0D2 /* Detail */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -262,14 +271,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CBA7E622C88778A00FE1E1C /* DirectionsMap.swift in Sources */,
 				5CD0619C2C1AFD0B0019F198 /* LaunchView.swift in Sources */,
 				5CFAD8EF2C342614002B9D58 /* BusinessRow.swift in Sources */,
+				5CBA7E5E2C88748C00FE1E1C /* DirectionsView.swift in Sources */,
 				5CFAD8E02C341E84002B9D58 /* HomeView.swift in Sources */,
 				5CFAD8EB2C342080002B9D58 /* BusinessSectionHeader.swift in Sources */,
 				5CFAD8D62C341AC4002B9D58 /* Business.swift in Sources */,
 				5CFAD8E92C341F9A002B9D58 /* BusinessList.swift in Sources */,
 				5C6697092C3580DD0088E0D2 /* BusinessDetail.swift in Sources */,
 				5CD0619A2C1AFD0B0019F198 /* City_SightsApp.swift in Sources */,
+				5CBA7E602C88764200FE1E1C /* BusinessTitle.swift in Sources */,
 				5CFAD8D82C341BE4002B9D58 /* BusinessSearch.swift in Sources */,
 				5CC5CB722C36C5BF0057E7EC /* BusinessMap.swift in Sources */,
 				5CFAD8ED2C3420D2002B9D58 /* BusinessSection.swift in Sources */,
