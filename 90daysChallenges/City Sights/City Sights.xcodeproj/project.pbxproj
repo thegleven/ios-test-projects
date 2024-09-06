@@ -20,6 +20,8 @@
 		5CD061AB2C1B00460019F198 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD061AA2C1B00460019F198 /* ContentModel.swift */; };
 		5CDC8E412C89C3ED00661C45 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDC8E402C89C3ED00661C45 /* OnboardingView.swift */; };
 		5CDC8E432C89D04E00661C45 /* LocationDeniedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDC8E422C89D04E00661C45 /* LocationDeniedView.swift */; };
+		5CF7C3C92C8B1AF500633A87 /* YelpAttribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF7C3C82C8B1AF500633A87 /* YelpAttribution.swift */; };
+		5CF7C3CB2C8B1B0C00633A87 /* DashedDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF7C3CA2C8B1B0C00633A87 /* DashedDivider.swift */; };
 		5CFAD8D62C341AC4002B9D58 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFAD8D52C341AC4002B9D58 /* Business.swift */; };
 		5CFAD8D82C341BE4002B9D58 /* BusinessSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFAD8D72C341BE4002B9D58 /* BusinessSearch.swift */; };
 		5CFAD8DB2C341CCA002B9D58 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFAD8DA2C341CCA002B9D58 /* Constants.swift */; };
@@ -45,6 +47,8 @@
 		5CD061AA2C1B00460019F198 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		5CDC8E402C89C3ED00661C45 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		5CDC8E422C89D04E00661C45 /* LocationDeniedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDeniedView.swift; sourceTree = "<group>"; };
+		5CF7C3C82C8B1AF500633A87 /* YelpAttribution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpAttribution.swift; sourceTree = "<group>"; };
+		5CF7C3CA2C8B1B0C00633A87 /* DashedDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedDivider.swift; sourceTree = "<group>"; };
 		5CFAD8D52C341AC4002B9D58 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		5CFAD8D72C341BE4002B9D58 /* BusinessSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearch.swift; sourceTree = "<group>"; };
 		5CFAD8DA2C341CCA002B9D58 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -137,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				5CD0619B2C1AFD0B0019F198 /* LaunchView.swift */,
+				5CF7C3C72C8B1ABE00633A87 /* Common */,
 				5CFAD8DC2C341E2D002B9D58 /* Home */,
 				5CFAD8DD2C341E39002B9D58 /* Denied */,
 				5CFAD8DE2C341E4E002B9D58 /* Onboarding */,
@@ -159,6 +164,15 @@
 				5CFAD8D72C341BE4002B9D58 /* BusinessSearch.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5CF7C3C72C8B1ABE00633A87 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5CF7C3C82C8B1AF500633A87 /* YelpAttribution.swift */,
+				5CF7C3CA2C8B1B0C00633A87 /* DashedDivider.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		5CFAD8D92C341C44002B9D58 /* Helpers */ = {
@@ -287,11 +301,13 @@
 				5CFAD8D62C341AC4002B9D58 /* Business.swift in Sources */,
 				5CFAD8E92C341F9A002B9D58 /* BusinessList.swift in Sources */,
 				5C6697092C3580DD0088E0D2 /* BusinessDetail.swift in Sources */,
+				5CF7C3CB2C8B1B0C00633A87 /* DashedDivider.swift in Sources */,
 				5CD0619A2C1AFD0B0019F198 /* City_SightsApp.swift in Sources */,
 				5CBA7E602C88764200FE1E1C /* BusinessTitle.swift in Sources */,
 				5CFAD8D82C341BE4002B9D58 /* BusinessSearch.swift in Sources */,
 				5CC5CB722C36C5BF0057E7EC /* BusinessMap.swift in Sources */,
 				5CFAD8ED2C3420D2002B9D58 /* BusinessSection.swift in Sources */,
+				5CF7C3C92C8B1AF500633A87 /* YelpAttribution.swift in Sources */,
 				5CD061AB2C1B00460019F198 /* ContentModel.swift in Sources */,
 				5CDC8E412C89C3ED00661C45 /* OnboardingView.swift in Sources */,
 				5CFAD8DB2C341CCA002B9D58 /* Constants.swift in Sources */,

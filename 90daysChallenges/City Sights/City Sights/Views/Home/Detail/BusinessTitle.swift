@@ -17,7 +17,8 @@ struct BusinessTitle: View {
             
             //BusinessName
             Text(business.name!)
-                .font(.largeTitle)
+                .font(.title2)
+                .bold()
             
             //Loop through display address
             if business.location?.displayAddress != nil {
