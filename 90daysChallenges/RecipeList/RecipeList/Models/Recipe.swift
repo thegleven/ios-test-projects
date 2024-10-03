@@ -11,6 +11,7 @@ class Recipe: Identifiable, Decodable {
     
     var id: UUID?
     var name: String
+    var category: String
     var featured: Bool
     var image: String
     var description: String
@@ -22,9 +23,10 @@ class Recipe: Identifiable, Decodable {
     var ingredients: [Ingredients]
     var directions: [String]
     
-    init(id: UUID? = nil, name: String, featured: Bool, image: String, description: String, prepTime: String, cookTime: String, totalTime: String, servings: Int, highlights: [String], ingredients: [Ingredients], directions: [String]) {
+    init(id: UUID? = nil, name: String, category: String, featured: Bool, image: String, description: String, prepTime: String, cookTime: String, totalTime: String, servings: Int, highlights: [String], ingredients: [Ingredients], directions: [String]) {
         self.id = id
         self.name = name
+        self.category = category
         self.featured = featured
         self.image = image
         self.description = description
